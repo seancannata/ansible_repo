@@ -1,0 +1,10 @@
+# rhel_restart_apache_3.yml
+---
+- name: Install RHEL Packages
+  hosts: web
+  become: yes
+  tasks:
+  - name: ensure apache is running
+    service:
+      name: httpd
+      state: started
