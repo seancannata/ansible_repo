@@ -1,0 +1,10 @@
+---
+- name: Install RHEL Packages
+  hosts: web
+  become: yes
+  tasks:
+  - name: Updating all packages
+    yum:
+      name: '*'
+      state: latest
+
