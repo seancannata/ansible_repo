@@ -1,7 +1,7 @@
 ---
 - name: Install RHEL Packages
   hosts: all
-  become: yes
+  become: true
   tasks:
   - name: Upgrade all packages, excluding kernel
     yum:
