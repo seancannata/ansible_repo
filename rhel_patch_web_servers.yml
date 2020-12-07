@@ -1,6 +1,6 @@
 ---
 - name: Install RHEL Repos and Packages
-  hosts: {{ test_prod }}
+  hosts: web
   become: yes
   tasks:
     - name: install epel-release
