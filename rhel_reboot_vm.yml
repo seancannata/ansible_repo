@@ -1,6 +1,6 @@
 ---
 - name: Reboot VM
-  hosts: web
+  hosts: all
   become: yes
   Tasks
   - name: Unconditionally reboot the machine with all defaults
