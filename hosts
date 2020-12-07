@@ -1,15 +1,14 @@
 [web]
-node1 ansible_host=3.234.220.15
-node2 ansible_host=3.239.51.42
-node3 ansible_host=3.239.106.150
+node1 ansible_host=100.24.98.93
+node2 ansible_host=3.234.254.43
+node3 ansible_host=3.238.64.57
 
 [control]
-ansible-1 ansible_host=35.172.231.136
+ansible-1 ansible_host=3.239.71.27
 
-[web_test]
-node1 ansible_host=3.234.220.15
+[webtest]
+node1 ansible_host=100.24.98.93
 
-[web_prod]
-node2 ansible_host=3.239.51.42
-node3 ansible_host=3.239.106.150
-
+[webprod]
+node2 ansible_host=3.234.254.43
+node3 ansible_host=3.238.64.57
