@@ -1,0 +1,7 @@
+---
+- name: Reboot VM
+  hosts: {{ test_prod  }}
+  become: yes
+  Tasks
+  - name: Unconditionally reboot the machine with all defaults
+    reboot:

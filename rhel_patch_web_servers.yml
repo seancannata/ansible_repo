@@ -1,0 +1,17 @@
+---
+- name: Install RHEL Repos and Packages
+  hosts: {{ test_prod }}
+  become: yes
+  tasks:
+    - name: install epel-release
+      ansible.builtin.yum:
+        name: epel-release
+        state: latest
+
+    - name: Install a list of packages with a list variable
+      ansible.builtin.yum:
+        name: "{{ packages }}"
+      vars:
+        packages:
+        - httpd
+        - httpd-tools

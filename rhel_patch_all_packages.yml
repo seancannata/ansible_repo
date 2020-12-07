@@ -1,0 +1,14 @@
+---
+- name: Install RHEL Packages
+  hosts: web
+  become: yes
+  tasks:
+  - name: Upgrade all packages, excluding kernel
+    yum:
+      name: '*'
+      state: latest
+      exclude: kernel*
+      security: yes
+      bugfix: yes
+      skip_broken: yes
+
