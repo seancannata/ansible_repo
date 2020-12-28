@@ -3,7 +3,7 @@
   hosts: ansible-1
   name: "execute update job template survey"
   tasks:
-    - name: install"run update script"
+    - name: Run a script using an executable in a system path
       script: /home/student1/parse.py
       args:
         executable: python3
