@@ -1,6 +1,6 @@
 --- 
 - 
-  hosts: control
+  hosts: ansible-1
   name: "execute update job template survey"
   tasks:
     - name: install"run update script"
