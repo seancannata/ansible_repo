@@ -4,8 +4,6 @@
   name: "execute update job template survey"
   tasks:
     - name: Run a script using an executable in a system path
-      script: /home/student1/parse.py
-      args:
-        executable: python3
+      shell: python3 /home/student1/parse.py
 
 
