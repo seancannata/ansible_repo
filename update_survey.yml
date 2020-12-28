@@ -1,3 +1,6 @@
 ---
 - name: execute update job template survey
-  script: parse.py
+  
+  Tasks
+  - name:
+    script: parse.py
