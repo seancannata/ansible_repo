@@ -5,3 +5,7 @@
   tasks:
     - name: install"run update script"
       script: /home/student1/parse.py
+        args:
+          executable: python3
+
+
