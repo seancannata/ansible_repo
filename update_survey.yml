@@ -4,4 +4,4 @@
   name: "execute update job template survey"
   tasks:
     - name: install"run update script"
-      script: /home/student1parse.py
+      script: /home/student1/parse.py
