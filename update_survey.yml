@@ -1,6 +1,6 @@
 ---
 - name: execute update job template survey
-  
+  hosts: control
   Tasks
   - name:
     script: parse.py
