@@ -14,7 +14,7 @@ steps:
 #Leverage a bash command
 - task: CmdLine@2
   inputs:
-    script: 'curl --data "host_config_key=$(HOST_CONFIG_KEY)" $(url) -k'
+    script: 'curl --data "host_config_key=$(HOST_CONFIG_KEY)" $(URL) -k'
   env:
     HOST_CONFIG_KEY: $(host_config_key)
     URL: $(url)
