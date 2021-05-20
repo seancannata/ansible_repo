@@ -10,28 +10,8 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
-  
-#Leverage the Anible Plugin via Marketplace
-- task: Ansible@0
-  inputs:
-    ansibleInterface: 'agentMachine'
-    playbookPathOnAgentMachine: '/test/file.yaml'
-    inventoriesAgentMachine: 'inlineContent'
-    inventoryInlineDynamicAgentMachine: true
-
-#Invoke a python wrapper for the api call.
-- task: PythonScript@0
-  inputs:
-    scriptSource: 'filePath'
 
 #Leverage a bash command
 - task: CmdLine@2
   inputs:
-    script: 'curl tower.mytower.com'
+    script: 'curl --data "host_config_key=$(HOST_CONFIG_KEY)" $(url) -k'
