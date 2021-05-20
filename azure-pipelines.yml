@@ -15,3 +15,6 @@ steps:
 - task: CmdLine@2
   inputs:
     script: 'curl --data "host_config_key=$(HOST_CONFIG_KEY)" $(url) -k'
+  env:
+    HOST_CONFIG_KEY: $(host_config_key)
+    URL: $(url)
