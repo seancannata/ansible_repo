@@ -14,7 +14,7 @@ steps:
 #Leverage a bash command
 - task: CmdLine@2
   inputs:
-    script: echo $TEST
+    script: echo $TEST2
     #curl -X POST "https://$USERNAME:$PASSWORD@$URL"
   env:
     USERNAME: $(username)
