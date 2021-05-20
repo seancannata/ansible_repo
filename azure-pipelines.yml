@@ -15,9 +15,7 @@ steps:
 - task: CmdLine@2
   inputs:
     script: curl -X POST "https://$USERNAME:$PASSWORD@$URL" -k
-    #
   env:
     USERNAME: $(username)
     PASSWORD: $(password)
     URL: $(url)
-    TEST: $(test)
